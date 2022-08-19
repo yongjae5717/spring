@@ -21,10 +21,12 @@ public class SpringConfig {
         return new MemberService(memberRepository);
     }
 /*
+    // SpringDataJPA를 사용하기때문에 Interface에 등록되어있는 Bean을 사용한다.
     @Bean
     public TimeTraceAOP timeTraceAOP() {
         return new TimeTraceAOP();
     }
+
 
     @Bean
     public MemberRepository memberRepository() {
